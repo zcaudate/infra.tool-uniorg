@@ -19,6 +19,3 @@ function extract_ast(s){
 function extract_readme(s){
   return unified().use(parse).use(uniorg2rehype).use(document).use(rehype2remark).use(stringify).process(s);
 }
-
-// infra.tool-uniorg.main/EXPORTS [33] 
-var EXPORTS = {extract_ast,extract_readme};
